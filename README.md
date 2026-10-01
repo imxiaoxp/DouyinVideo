@@ -94,18 +94,6 @@ DouyinVideo/
 └── README.md
 ```
 
-## 与 DouyinParse 的区别
-
-| | DouyinParse | DouyinVideo |
-| --- | --- | --- |
-| 插入内容 | 播放 URL 纯文本 | 带封面的 `<video>` 标签 |
-| 返回封面 | 否 | 是 |
-| 接口权限 | 公开（CORS 全开） | 仅登录用户 |
-| 画质选项 | 540p ~ 2160p | 360p ~ 1080p |
-| 风控自愈 | 无 | ttwid 自动替换重试 |
-
-两个插件功能重叠，**二选一启用即可**；若同时启用，referrer meta 注入做了去重，不会重复输出。
-
 ## 注意事项
 
 - 依赖 cURL 扩展，且未校验 SSL 证书
